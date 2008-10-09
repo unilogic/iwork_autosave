@@ -1,4 +1,4 @@
-#!/usr/local/bin/ruby
+#!/usr/bin/env ruby
 
 require 'rubygems'
 require 'rbosa'
@@ -8,7 +8,7 @@ thread = Thread.new do
   while true
     pages.documents.each { |document| 
       pages.save document 
-      }
+    }
     sleep 120
   end   
 end
